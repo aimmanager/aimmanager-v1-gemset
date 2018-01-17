@@ -31,10 +31,10 @@ WORKDIR /aim_gem
 RUN mkdir -p /aim_gem
 COPY Gemfile* /aim_gem/
 
-RUN bundle install --full-index --without development test aim
+RUN bundle install --full-index --without development test
 
 COPY docker-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
-RUN ln -s usr/local/bin/docker-entrypoint.sh
+RUN ln -s /usr/local/bin/docker-entrypoint.sh
 
 ENTRYPOINT ["docker-entrypoint.sh"]

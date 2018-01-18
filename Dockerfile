@@ -33,8 +33,12 @@ COPY Gemfile* /aim_gem/
 
 RUN bundle install --full-index --without development test
 
+COPY wkhtmltopdf.sh /usr/local/bin/
+chmod a+x /usr/local/bin/wkhtmltopdf.sh
+RUN ln -s /usr/local/bin/wkhtmltopdf.sh /usr/bin/wkhtmltopdf.sh
+
 COPY docker-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
-RUN ln -s /usr/local/bin/docker-entrypoint.sh
+RUN ln -s /usr/local/bin/docker-entrypoint.sh /usr/bin/docker-entrypoint.sh
 
 ENTRYPOINT ["docker-entrypoint.sh"]

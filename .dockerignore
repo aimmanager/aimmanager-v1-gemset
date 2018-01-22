@@ -1,0 +1,16 @@
+.byebug_history
+.env
+.env.*
+.git
+.gitignore
+.gitlab-ci.yml
+docker-cloud.yml
+docker-compose.yml
+Dockerfile
+log/*
+public/*
+tmp/*
+node_modules/*
+.dockerignore
+/var/*
+.bundle

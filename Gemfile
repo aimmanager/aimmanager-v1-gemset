@@ -70,6 +70,7 @@ gem 'bootstrap-multiselect-rails'
 gem 'bootstrap-sass', '~> 3.0.3.0'
 gem 'bootstrap-slider-rails', '~> 1.9'
 gem 'browser', '~> 2.5', '>= 2.5.2'
+gem 'bootsnap', '~> 1.1', '>= 1.1.8', require: false
 gem 'bugsnag', '~> 5.3', '>= 5.3.3'
 gem 'cancan', '~> 1.6', '>= 1.6.10'
 gem 'carmen', '~> 1.1'
@@ -98,7 +99,7 @@ gem 'geocoder', '~> 1.4', '>= 1.4.4'
 gem 'globalize', '5.0.0'
 gem 'globalize-accessors', '~> 0.2.1'
 gem 'gmaps4rails', '~> 2.1', '>= 2.1.2'
-gem 'goldiloader', '~> 2.0', '>= 2.0.1', require: false
+gem 'goldiloader', '~> 2.0', '>= 2.0.1'
 gem 'gon', '~> 5.2', '>= 5.2.3'
 gem 'gritter', '~> 1.0', '>= 1.0.2'
 gem 'jquery-fileupload-rails', '~> 0.4.7'
@@ -122,6 +123,7 @@ gem 'rqrcode', '~> 0.10.1'
 gem 'rubyzip', '~> 1.2', '>= 1.2.1'
 gem 'rufus-scheduler', '~> 3.4', '>= 3.4.2'
 gem 'run_cl', '~> 1.2.0'
+gem 'staccato', '~> 0.5.1'
 gem 'select2-rails', '~> 3.5', '>= 3.5.10'
 gem 'simple_form', '~> 3.1', '>= 3.1.1'
 gem 'slim-rails', '~> 3.1', '>= 3.1.3'
@@ -175,7 +177,6 @@ group :production do
 
   gem 'remote_syslog_logger', '~> 1.0', '>= 1.0.3'
   gem 'scout_apm', '~> 2.3', '>= 2.3.1'
-  gem 'informant-rails', '~> 1.1'
 end
 
 # XLSX

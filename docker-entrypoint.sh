@@ -38,11 +38,4 @@ else
     bundle exec rake assets:precompile RAILS_GROUPS=assets
 fi
 
-if [ -z "${WITH_DB_VIEWS}" ]; then
-    echo "skip db:views"
-else
-    # run db:views
-    bundle exec rake db:views
-fi
-
 exec "$@"

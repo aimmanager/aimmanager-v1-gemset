@@ -55,6 +55,7 @@ group :development, :test do
   gem 'pry-remote', '~> 0.1.8'
   gem 'pry-stack_explorer', '~> 0.4.9.2'
   gem 'web-console', '~> 2.0'
+  gem 'vine', '0.4'
 end
 
 gem 'sidekiq', '~> 4.2', '>= 4.2.10'
@@ -181,6 +182,7 @@ end
 
 # XLSX
 gem 'axlsx', git: 'https://github.com/randym/axlsx.git', ref: '776037c0fc799bb09da8c9ea47980bd3bf296874'
+gem 'axlsx_styler' , '~> 0.1.7'
 gem 'axlsx_rails'
 
 # Active Record improvements

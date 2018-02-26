@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'bugsnag', '~> 6.6', '>= 6.6.3'
 gem 'config', '~> 1.6', '>= 1.6.1'
 gem 'pg', '~> 0.21.0'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
@@ -8,6 +9,7 @@ gem 'redis-rails', '~> 5.0', '>= 5.0.2'
 gem 'sidekiq', '~> 5.0', '>= 5.0.5'
 gem 'sidekiq-cron', '~> 0.6.3'
 gem 'sidekiq-history', '~> 0.0.9'
+gem 'scout_apm', '~> 2.4', '>= 2.4.6'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -20,8 +22,8 @@ group :development do
   gem 'capistrano', '~> 2.15.5'
   gem 'capistrano-rails', '~> 0.0.7'
   gem 'capistrano-ext', '~> 1.2', '>= 1.2.1', require: false
-
-  gem 'spring'
+  gem 'pry', '~> 0.11.3'
+  gem 'spring', '~> 2.0', '>= 2.0.2'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 

@@ -39,6 +39,8 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (8.0.0)
+    bugsnag (6.6.3)
+      concurrent-ruby (~> 1.0)
     builder (3.2.3)
     byebug (9.1.0)
     capistrano (2.15.9)
@@ -51,6 +53,7 @@ GEM
       capistrano (>= 1.0.0)
     capistrano-rails (0.0.7)
       capistrano
+    coderay (1.1.2)
     concurrent-ruby (1.0.5)
     config (1.6.1)
       activesupport (>= 3.0)
@@ -122,6 +125,9 @@ GEM
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
     pg (0.21.0)
+    pry (0.11.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
     puma (3.11.2)
     rack (2.0.3)
     rack-protection (2.0.0)
@@ -174,6 +180,7 @@ GEM
       redis (>= 2.2, < 5)
     rufus-scheduler (3.4.2)
       et-orbi (~> 1.0)
+    scout_apm (2.4.6)
     sidekiq (5.0.5)
       concurrent-ruby (~> 1.0)
       connection_pool (~> 2.2, >= 2.2.0)
@@ -209,6 +216,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bugsnag (~> 6.6, >= 6.6.3)
   byebug
   capistrano (~> 2.15.5)
   capistrano-ext (~> 1.2, >= 1.2.1)
@@ -218,14 +226,16 @@ DEPENDENCIES
   figaro (~> 1.1, >= 1.1.1)
   listen (~> 3.0.5)
   pg (~> 0.21.0)
+  pry (~> 0.11.3)
   puma (~> 3.7)
   rails (~> 5.1, >= 5.1.4)
   redis-rails (~> 5.0, >= 5.0.2)
+  scout_apm (~> 2.4, >= 2.4.6)
   sidekiq (~> 5.0, >= 5.0.5)
   sidekiq-cron (~> 0.6.3)
   sidekiq-history (~> 0.0.9)
   slack-notifier (~> 2.3, >= 2.3.2)
-  spring
+  spring (~> 2.0, >= 2.0.2)
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
 

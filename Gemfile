@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'bugsnag', '~> 6.6', '>= 6.6.3'
 gem 'config', '~> 1.6', '>= 1.6.1'
+gem 'data_migrate', '~> 3.4'
 gem 'pg', '~> 0.21.0'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 gem 'rails', '~> 5.1', '>= 5.1.4'

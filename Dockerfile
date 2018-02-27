@@ -15,8 +15,8 @@ RUN apt-get update -qq && apt-get install -qq -y --fix-missing --no-install-reco
                         libfontconfig1 \
                         libfontconfig1-dev \
                         postgresql-client-10 \
+                        bsdmainutils \
                         sqlite3 \
-                        libsqlite3-dev \
                         gdal-bin \
                         libgdal-dev \
                         python-gdal \

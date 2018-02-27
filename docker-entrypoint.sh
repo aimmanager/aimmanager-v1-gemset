@@ -18,7 +18,7 @@ else
     cd "$APP_CURRENT_DIR"
 fi
 
-bundle check || bundle install --full-index --without development test --with aim
+bundle check || bundle install --full-index --without development test
 
 if [ -z "${WITH_SEEDS_MIGRATIONS}" ]; then
     echo "skip db:migrate / db:seeds / data:migrate"

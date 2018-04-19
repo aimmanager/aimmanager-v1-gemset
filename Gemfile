@@ -179,7 +179,7 @@ group :production do
   gem 'mixpanel_client', '~> 4.1', '>= 4.1.6'
 
   gem 'remote_syslog_logger', '~> 1.0', '>= 1.0.3'
-  gem 'scout_apm', '~> 2.3', '>= 2.3.1'
+  gem 'scout_apm', '~> 2.3.0', '>= 2.3.5'
 end
 
 # XLSX

@@ -1,4 +1,4 @@
-FROM ruby:2.3.7-slim-jessie
+FROM ruby:2.3.7-jessie
 
 RUN apt-get update -qq && apt-get install -qq -y --fix-missing --no-install-recommends \
                         apt-transport-https \

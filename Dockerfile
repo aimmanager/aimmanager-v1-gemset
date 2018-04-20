@@ -13,6 +13,7 @@ RUN apt-get update -qq && apt-get install -qq -y --fix-missing --no-install-reco
                         bsdmainutils \
                         git \
                         sqlite3 \
+                        imagemagick \
                         gdal-bin \
                         libgdal-dev \
                         lsb-release \

@@ -1,31 +1,25 @@
-FROM ruby:2.3.6-jessie
+FROM ruby:2.3.7-alpine
 
-RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
+ENV LIBV8_VERSION 3.16.14.18
 
-RUN echo "deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main" > /etc/apt/sources.list.d/pgdg.list
-RUN curl -sL https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
-
-RUN apt-get update -qq && apt-get install -qq -y --fix-missing --no-install-recommends \
-                        build-essential \
-                        nodejs \
-                        chrpath \
-                        libxft-dev \
-                        libfreetype6 \
-                        libfreetype6-dev \
-                        libfontconfig1 \
-                        libfontconfig1-dev \
-                        postgresql-client-10 \
-                        sqlite3 \
-                        libsqlite3-dev \
-                        gdal-bin \
-                        libgdal-dev \
-                        python-gdal \
-                        wkhtmltopdf \
-                        xvfb \
-                        zip \
-                        unzip \
-                      && apt-get clean \
-                      && rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
+# Minimal requirements to run a Rails app
+RUN apk add --no-cache --update --virtual build-dependencies \
+                                build-base \
+                                bash \
+                                linux-headers \
+                                git \
+                                sqlite-dev \
+                                libpq \
+                                postgresql-dev \
+                                postgresql-client \
+                                imagemagick \
+                                nodejs \
+                                tzdata \
+                                xvfb \
+                                zip \
+                                unzip \
+                                && apk del build-base \
+                                && rm -rf /var/cache/apk/*
 
 ENV BUNDLE_PATH /bundle_path
 

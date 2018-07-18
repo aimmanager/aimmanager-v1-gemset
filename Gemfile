@@ -144,6 +144,8 @@ gem 'wkhtmltopdf-binary', '~> 0.12.3.1'
 gem 'foreman', '~> 0.84.0', require: false
 gem 'sinatra', '~> 1.4', '>= 1.4.8', require: false
 gem 'whenever', '~> 0.10.0', require: false
+gem 'apipie-rails'
+
 # Push notifications for google
 gem 'gcm', '~> 0.1.1', require: false
 gem 'parallel', '1.11.2', require: false

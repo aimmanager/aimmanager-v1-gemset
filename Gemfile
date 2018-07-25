@@ -19,6 +19,9 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
 gem 'validates_timeliness', '~> 4.0'
 
+gem 'elasticsearch-model', github: 'elastic/elasticsearch-rails', branch: '5.x'
+gem 'elasticsearch-rails', github: 'elastic/elasticsearch-rails', branch: '5.x'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

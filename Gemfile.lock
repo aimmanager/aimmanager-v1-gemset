@@ -1,4 +1,15 @@
 GIT
+  remote: git://github.com/elastic/elasticsearch-rails.git
+  revision: 212b37a1e927015f2a095e0f841c897d377ad1c7
+  branch: 5.x
+  specs:
+    elasticsearch-model (5.1.0)
+      activesupport (> 3)
+      elasticsearch (~> 5)
+      hashie
+    elasticsearch-rails (5.1.0)
+
+GIT
   remote: https://github.com/randym/axlsx.git
   revision: 776037c0fc799bb09da8c9ea47980bd3bf296874
   ref: 776037c0fc799bb09da8c9ea47980bd3bf296874
@@ -219,6 +230,14 @@ GEM
       activemodel (>= 3.0)
       activesupport (>= 3.0)
       request_store (~> 1.0)
+    elasticsearch (5.0.5)
+      elasticsearch-api (= 5.0.5)
+      elasticsearch-transport (= 5.0.5)
+    elasticsearch-api (5.0.5)
+      multi_json
+    elasticsearch-transport (5.0.5)
+      faraday
+      multi_json
     ember-data-source (2.0.1)
       ember-source (>= 1.8, < 3.0)
     ember-rails (0.16.4)
@@ -704,6 +723,8 @@ DEPENDENCIES
   devise_security_extension (~> 0.10.0)
   down (~> 4.1, >= 4.1.1)
   draper (~> 2.1)
+  elasticsearch-model!
+  elasticsearch-rails!
   ember-data-source (~> 2.0.0.beta.1)
   ember-rails (~> 0.16.4)
   ember-source (= 1.8.1)

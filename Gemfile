@@ -76,6 +76,7 @@ gem 'bootstrap-slider-rails', '~> 1.9'
 gem 'browser', '~> 2.5', '>= 2.5.2'
 gem 'bootsnap', '~> 1.1', '>= 1.1.8', require: false
 gem 'bugsnag', '~> 5.3', '>= 5.3.3'
+gem 'newrelic_rpm'
 gem 'cancan', '~> 1.6', '>= 1.6.10'
 gem 'carmen', '~> 1.1'
 gem 'chunky_png', '~> 1.3', '>= 1.3.8'

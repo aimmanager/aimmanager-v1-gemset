@@ -382,6 +382,7 @@ GEM
     net-ssh-gateway (2.0.0)
       net-ssh (>= 4.0.0)
     netrc (0.11.0)
+    newrelic_rpm (5.7.0.350)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
     nori (2.6.0)
@@ -754,6 +755,7 @@ DEPENDENCIES
   letter_opener (~> 1.4, >= 1.4.1)
   lograge (~> 0.7.1)
   mixpanel_client (~> 4.1, >= 4.1.6)
+  newrelic_rpm
   nokogiri (~> 1.8, >= 1.8.1)
   oj (~> 3.3, >= 3.3.9)
   omniauth (~> 1.4, >= 1.4.2)
@@ -826,4 +828,4 @@ DEPENDENCIES
   wkhtmltopdf-binary (~> 0.12.3.1)
 
 BUNDLED WITH
-   1.16.3
+   1.16.6

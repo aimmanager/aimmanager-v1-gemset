@@ -21,6 +21,8 @@ gem 'validates_timeliness', '~> 4.0'
 
 gem 'elasticsearch-model', github: 'elastic/elasticsearch-rails', branch: '5.x'
 gem 'elasticsearch-rails', github: 'elastic/elasticsearch-rails', branch: '5.x'
+gem 'newrelic_rpm'
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

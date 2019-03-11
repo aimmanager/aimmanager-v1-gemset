@@ -11,6 +11,7 @@ gem 'sidekiq', '~> 5.0', '>= 5.0.5'
 gem 'sidekiq-cron', '~> 0.6.3'
 gem 'sidekiq-history', '~> 0.0.9'
 gem 'scout_apm', '~> 2.4', '>= 2.4.6'
+gem 'newrelic_rpm'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

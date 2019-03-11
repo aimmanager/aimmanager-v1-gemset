@@ -123,6 +123,7 @@ GEM
     net-ssh (4.2.0)
     net-ssh-gateway (2.0.0)
       net-ssh (>= 4.0.0)
+    newrelic_rpm (6.1.0.352)
     nio4r (2.2.0)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
@@ -228,6 +229,7 @@ DEPENDENCIES
   data_migrate (~> 3.4)
   figaro (~> 1.1, >= 1.1.1)
   listen (~> 3.0.5)
+  newrelic_rpm
   pg (~> 0.21.0)
   pry (~> 0.11.3)
   puma (~> 3.7)
@@ -243,4 +245,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-   1.16.1
+   1.17.3

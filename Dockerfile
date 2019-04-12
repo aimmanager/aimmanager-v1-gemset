@@ -2,7 +2,7 @@ FROM ruby:2.4.3-jessie
 
 RUN echo "deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main" > /etc/apt/sources.list.d/pgdg.list
 RUN curl -sL https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
-
+RUN printf "deb http://archive.debian.org/debian/ jessie main\ndeb-src http://archive.debian.org/debian/ jessie main\ndeb http://security.debian.org jessie/updates main\ndeb-src http://security.debian.org jessie/updates main" > /etc/apt/sources.list
 RUN apt-get update -qq && apt-get install -qq -y --fix-missing --no-install-recommends \
                         build-essential \
                         postgresql-client-10 \

@@ -4,7 +4,7 @@ RUN echo "deb http://deb.nodesource.com/node_8.x jessie main" > /etc/apt/sources
   echo "deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main" > /etc/apt/sources.list.d/pgdg.list && \
   curl -sL https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -  && \
   curl -sL https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
-
+RUN printf "deb http://archive.debian.org/debian/ jessie main\ndeb-src http://archive.debian.org/debian/ jessie main\ndeb http://security.debian.org jessie/updates main\ndeb-src http://security.debian.org jessie/updates main" > /etc/apt/sources.list
 RUN apt-get update -qq && apt-get install -qq -y --fix-missing --no-install-recommends \
                                           apt-transport-https \
                                           build-essential \

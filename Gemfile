@@ -216,15 +216,15 @@ gem 'paperclip-azure', '~> 1.0', '>= 1.0.4', require: false
 gem 'apipie-rails'
 
 
-=begin group :aim, :test do
-  gem 'aim', path: 'aim/engine'
-  gem 'aim_ember', path: 'aim/ember'
-  gem 'aim_geo', path: 'aim/geo'
-  gem 'aim_incident', path: 'aim/incident'
-  gem 'aim_maintenance', path: 'aim/maintenance'
-  gem 'aim_viewer_rails', path: 'aim/viewer'
+#group :aim, :test do
+ # gem 'aim', path: 'aim/engine'
+  #gem 'aim_ember', path: 'aim/ember'
+  #gem 'aim_geo', path: 'aim/geo'
+  #gem 'aim_incident', path: 'aim/incident'
+  #gem 'aim_maintenance', path: 'aim/maintenance'
+  #gem 'aim_viewer_rails', path: 'aim/viewer'
 
 
   # PRECUERDO
-  gem 'omniauth-atc', path: 'aim/omniauth-atc', require: false
-end =end
+  #gem 'omniauth-atc', path: 'aim/omniauth-atc', require: false
+#end

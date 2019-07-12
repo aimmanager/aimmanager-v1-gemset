@@ -174,7 +174,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     colorize (0.8.1)
-    concurrent-ruby (1.0.5)
+    concurrent-ruby (1.1.5)
     connection_pool (2.2.1)
     crass (1.0.4)
     css_parser (1.6.0)

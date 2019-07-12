@@ -30,9 +30,8 @@ RUN apt-get update -qq && apt-get install -qq -y --fix-missing --no-install-reco
                                       && rm -rf /var/lib/apt/lists/* /var/tmp/* /tmp/*
 
 ENV BUNDLE_PATH /bundle_path
-
-WORKDIR /aim_gem
 RUN mkdir -p /aim_gem
+WORKDIR /aim_gem
 COPY Gemfile* /aim_gem/
 
 RUN bundle install --full-index --without development test

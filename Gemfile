@@ -216,7 +216,7 @@ gem 'paperclip-azure', '~> 1.0', '>= 1.0.4', require: false
 gem 'apipie-rails'
 
 
-group :aim, :test do
+=begin group :aim, :test do
   gem 'aim', path: 'aim/engine'
   gem 'aim_ember', path: 'aim/ember'
   gem 'aim_geo', path: 'aim/geo'
@@ -227,4 +227,4 @@ group :aim, :test do
 
   # PRECUERDO
   gem 'omniauth-atc', path: 'aim/omniauth-atc', require: false
-end
+end =end

@@ -21,7 +21,7 @@ RUN apt-get update -qq && apt-get install -qq -y --fix-missing --no-install-reco
                                           libgdal-dev \
                                           lsb-release \
                                           python-gdal \
-                                          postgresql-client-10 \
+                                          postgresql-client-11 \
                                           wkhtmltopdf \
                                           xvfb \
                                           zip \

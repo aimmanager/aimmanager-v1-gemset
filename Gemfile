@@ -179,7 +179,7 @@ gem 'store_base_sti_class', '~> 0.3.0'
 gem 'handlebars', '~> 0.6.0'
 
 group :production do
-  gem 'puma', '~> 3.10'
+  gem 'puma', '~> 3.12'
   gem 'puma_worker_killer', '~> 0.1.0'
 
   # MixPanel
